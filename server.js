@@ -31,15 +31,15 @@ mongoose.connect("mongodb://localhost/unit18Populater", { useNewUrlParser: true 
 
 // Routes
 
-// A GET route for scraping the echoJS website
+// A GET route for scraping the website
 app.get("/scrape", function(req, res) {
   // First, we grab the body of the html with axios
-  axios.get("http://www.https://www.farandwide.com/s/best-food-every-country-68d76e2bd6204526.com/").then(function(response) {
+  axios.get("https://www.japan-guide.com/e/e2063.html").then(function(response) {
     // Then, we load that into cheerio and save it to $ for a shorthand selector
     var $ = cheerio.load(response.data);
 
     // Now, we grab every h2 within an article tag, and do the following:
-    $("article h2").each(function(i, element) {
+    $("article.spot_list__spot").each(function(i, element) {
       // Save an empty result object
       var result = {};
 
