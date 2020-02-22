@@ -39,13 +39,13 @@ app.get("/scrape", function(req, res) {
     var $ = cheerio.load(response.data);
 
     // Now, we grab every h2 within an article tag, and do the following:
-    $("article.spot_list__spot").each(function(i, element) {
+    $("article.spot_list__spot__main_info").each(function(i, element) {
       // Save an empty result object
       var result = {};
 
       // Add the text and href of every link, and save them as properties of the result object
       result.title = $(this)
-        .children("a")
+        .children("div")
         .text();
       result.link = $(this)
         .children("a")
