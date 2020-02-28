@@ -4,23 +4,19 @@ Web Scrape homework/Final Project piece
 
 ### Overview
 
-In this assignment, you'll create a web app that lets users view and leave comments on the latest news. But you're not going to actually write any articles; instead, you'll flex your Mongoose and Cheerio muscles to scrape news from another site.
+I've created a web app that lets users view and leave comments on articles about Japanese Festivals scraped from a particular site.
 
-### Before You Begin
+* ### NPM Packages
 
-1. Create a GitHub repo for this assignment and clone it to your computer. Any name will do -- just make sure it's related to this project in some fashion.
+   * express
 
-2. Run `npm init`. When that's finished, install and save these npm packages:
+   * express-handlebars
 
-   1. express
+   * mongoose
 
-   2. express-handlebars
+   * cheerio
 
-   3. mongoose
-
-   4. cheerio
-
-   5. axios
+   * axios
 
 3. **NOTE**: If you want to earn complete credit for your work, you must use all five of these packages in your assignment.
 
